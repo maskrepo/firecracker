@@ -1,0 +1,19 @@
+{
+  "entete": {
+    "idUnique": "659039e688c23ff08b4f905be07294ab66d600d4",
+    "idLot": "12345",
+    "dateHeureDemande": "2020-08-25T09:08:07",
+    "idEmetteur": "L20057",
+    "idReference": "zerealref123",
+    "idGreffe": "0101",
+    "typeDemande": "IMPRESSION"
+  },
+  "objetMetier": {
+    "urlFichierAImprimer": "http://toto.fr/popo"
+  },
+  "reponse": {
+    "estReponseOk": false,
+    "messageErreur": "noerror",
+    "stackTrace": "nostracktrace"
+  }
+}
