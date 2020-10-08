@@ -38,8 +38,9 @@ Sur les topics <strong>IMPRESSION_DEMANDE</strong> et <strong>IMPRESSION_REPONSE
     "stackTrace": "nostracktrace"
   }
 }
+</p>
+Sur le topic <strong>MYGREFFE_IMPRESSION_REPONSE</strong> :<p>
 ``
-Sur le topic <strong>MYGREFFE_IMPRESSION_REPONSE</strong> :
 {
   "entete": {
     "idUnique": "659039e688c23ff08b4f905be07294ab66d600d4",
@@ -60,3 +61,4 @@ Sur le topic <strong>MYGREFFE_IMPRESSION_REPONSE</strong> :
     "stackTrace": "nostracktrace"
   }
 }
+</p>
