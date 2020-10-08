@@ -30,7 +30,12 @@ Sur les topics <strong>IMPRESSION_DEMANDE</strong> et <strong>IMPRESSION_REPONSE
     "typeDemande": "IMPRESSION"
   },
   "objetMetier": {
-    "urlFichierAImprimer": "http://toto.fr/popo"
+    "IDsortieDocument" : "IDSortieDocumentBidon",
+    "urlFichierAImprimer": "http://toto.fr/popo",
+    "rectoVerso": true,
+    "nomImprimante" : "Canon-accueil",
+    "nomBacEntree" : "marianne-RV",
+    "nbExemplaires" : 1
   },
   "reponse": {
     "estReponseOk": false,

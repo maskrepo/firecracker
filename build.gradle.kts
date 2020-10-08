@@ -1,7 +1,7 @@
 val quarkusVersion: String = "1.5.2.Final"
-val MaskModelVersion = "1.0.2-SNAPSHOT"
+val MaskModelVersion = "1.0.4-SNAPSHOT"
 val MaskCacheVersion = "1.0.1-SNAPSHOT"
-val MaskUtilVersion = "1.0.2-SNAPSHOT"
+val MaskUtilVersion = "1.0.3-SNAPSHOT"
 val StingerUtilVersion = "1.0.0-SNAPSHOT"
 
 plugins {
