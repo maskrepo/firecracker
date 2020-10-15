@@ -1,4 +1,4 @@
-package fr.convergence.proddoc.kafka
+package fr.convergence.proddoc.reactive
 
 import fr.convergence.proddoc.model.lib.obj.MaskMessage
 import fr.convergence.proddoc.model.metier.RetourImpressionMyGreffe
