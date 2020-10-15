@@ -1,12 +1,12 @@
-val quarkusVersion: String = "1.5.2.Final"
-val MaskModelVersion = "1.0.4-SNAPSHOT"
+val quarkusVersion: String = "1.8.0.Final"
+val MaskModelVersion = "1.1.4-SNAPSHOT"
 val MaskCacheVersion = "1.0.1-SNAPSHOT"
-val MaskUtilVersion = "1.0.3-SNAPSHOT"
-val StingerUtilVersion = "1.0.0-SNAPSHOT"
+val MaskUtilVersion = "1.1.2-SNAPSHOT"
+val StingerUtilVersion = "1.1.2-SNAPSHOT"
 
 plugins {
     kotlin("jvm") version "1.4.10"
-    id ("io.quarkus") version "1.5.2.Final"
+    id ("io.quarkus") version "1.8.0.Final"
     id ("org.jetbrains.kotlin.plugin.allopen") version "1.3.72"
     id ("org.sonarqube") version "2.7"
     id ("jacoco")
@@ -14,7 +14,7 @@ plugins {
 }
 
 group = "fr.convergence.proddoc"
-version = "1.0.0-SNAPSHOT"
+version = "1.0.1-SNAPSHOT"
 
 repositories {
     mavenCentral()
@@ -49,7 +49,7 @@ publishing {
     }
 
     publications {
-        create<MavenPublication>("stinger") {
+        create<MavenPublication>("silvershadow") {
             from(components["java"])
         }
     }
@@ -57,8 +57,8 @@ publishing {
 
 dependencies {
     implementation(enforcedPlatform("io.quarkus:quarkus-bom:$quarkusVersion"))
-    implementation("io.quarkus:quarkus-resteasy")
-    implementation("io.quarkus:quarkus-rest-client")
+    implementation("io.quarkus:quarkus-resteasy:$quarkusVersion")
+    implementation("io.quarkus:quarkus-rest-client:$quarkusVersion")
     implementation("io.quarkus:quarkus-kafka-client:$quarkusVersion")
     implementation("io.quarkus:quarkus-smallrye-reactive-messaging-kafka:$quarkusVersion")
     implementation("org.jetbrains.kotlinx:kotlinx-serialization-core:1.0.0-RC")

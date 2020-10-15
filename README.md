@@ -16,7 +16,7 @@ IMPRESSION_REPONSE<br>
 
 ## Exemples de messages 
 
-Sur les topics <strong>IMPRESSION_DEMANDE</strong> et <strong>IMPRESSION_REPONSE</strong>:
+Sur les topics <strong>impression_demande</strong> et <strong>impression_reponse</strong>:
 <p>
 ``
 {
