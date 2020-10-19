@@ -1,4 +1,4 @@
-# Silvershadow (service d'impression)
+# Firecracker (service d'impression)
 Lancement : ./gradlew quarkusdev <br>
 (port 8099)
 
@@ -10,9 +10,9 @@ Informer myGreffe d'une demande d'impression
 4) Réponse à la demande d'impression initiale de Rhino 
 
 ## Topics utilisés
-IMPRESSION_DEMANDE<br>
-MYGREFFE_IMPRESSION_DEMANDE<br>
-IMPRESSION_REPONSE<br>
+impression_demande<br>
+mygreffe_impression_reponse<br>
+impression_reponse<br>
 
 ## Exemples de messages 
 
@@ -44,7 +44,7 @@ Sur les topics <strong>impression_demande</strong> et <strong>impression_reponse
   }
 }
 </p>
-Sur le topic <strong>MYGREFFE_IMPRESSION_REPONSE</strong> :<p>
+Sur le topic <strong>mygreffe_impression_reponse</strong> :<p>
 ``
 {
   "entete": {

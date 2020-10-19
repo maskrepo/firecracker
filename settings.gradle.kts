@@ -1,2 +1,1 @@
-rootProject.name = "silvershadow"
-
+rootProject.name = "firecracker"
