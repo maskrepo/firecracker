@@ -41,4 +41,4 @@ jobs:
           file: ./src/main/docker/Dockerfile.jvm
           platforms: linux/amd64
           push: true
-          tags: mygreffe/firecracker-jvm:latest mygreffe/firecracker-jvm:${{ env.TAG_VERSION }}
+          tags: mygreffe/firecracker-jvm
