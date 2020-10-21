@@ -1,7 +1,7 @@
 val quarkusVersion: String = "1.8.0.Final"
 val MaskModelVersion = "1.1.4-SNAPSHOT"
 val MaskCacheVersion = "1.0.1-SNAPSHOT"
-val MaskUtilVersion = "1.1.3-SNAPSHOT"
+val MaskUtilVersion = "1.1.4-SNAPSHOT"
 
 plugins {
     kotlin("jvm") version "1.4.10"
@@ -13,7 +13,7 @@ plugins {
 }
 
 group = "fr.convergence.proddoc"
-version = "1.0.1-SNAPSHOT"
+version = "1.0.2-SNAPSHOT"
 
 repositories {
     mavenCentral()

@@ -2,18 +2,20 @@ package fr.convergence.proddoc.reactive.fr.convergence.proddoc.kafka
 
 import fr.convergence.proddoc.model.lib.obj.MaskMessage
 import fr.convergence.proddoc.model.metier.DemandeImpression
+import fr.convergence.proddoc.util.MyGreffeUtil
 import fr.convergence.proddoc.util.WSUtils
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
 import org.eclipse.microprofile.reactive.messaging.Incoming
 import org.slf4j.LoggerFactory.getLogger
 import javax.enterprise.context.ApplicationScoped
+import javax.inject.Inject
 import javax.ws.rs.DefaultValue
 import javax.ws.rs.QueryParam
 import javax.ws.rs.core.MediaType.APPLICATION_JSON
 
 @ApplicationScoped
-class ImpressionDemande {
+class ImpressionDemande(@Inject var myGreffeUtil : MyGreffeUtil) {
 
     companion object {
         private val LOG = getLogger(ImpressionDemande::class.java)
@@ -45,7 +47,7 @@ class ImpressionDemande {
 
         // appeler URI de myGreffe avec les paramètres nécessaires
         GlobalScope.launch {
-            val retourMyGreffe = WSUtils.demandeRestURLmyGreffe(
+            val retourMyGreffe = myGreffeUtil.demandeRestURLmyGreffe(
                     pathDuService = "/impression/demandeDepuisProddoc",
                     parametresRequete = mapOf(
                             "idSortieDocument" to idSortieDocument,
