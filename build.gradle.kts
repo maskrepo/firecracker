@@ -78,3 +78,9 @@ allOpen {
     annotation("javax.enterprise.context.ApplicationScoped")
     annotation("javax.ws.rs.Path")
 }
+
+tasks.register("printVersion") {
+    doLast {
+        File(projectDir, "version.txt").appendText("${project.version}")
+    }
+}
